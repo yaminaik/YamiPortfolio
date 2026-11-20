@@ -6,7 +6,7 @@ export const profile = {
   email: 'yn2224@nyu.edu', // swap for hello@yaminaik.com once you set it up
   linkedin: 'https://www.linkedin.com/in/yaminaik/',
   github: 'https://github.com/yaminaik',
-    resume: '/Yami_Naik_Resume.pdf',
+    resume: '/YamiP_Naik_Resume.pdf',
 }
 
 export const studies = [
