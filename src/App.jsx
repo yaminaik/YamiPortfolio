@@ -1,6 +1,6 @@
-
 import Art from './components/Art.jsx'
 import CursorEffects from './components/CursorEffects.jsx'
+import EmailButton from './components/EmailButton.jsx'
 import { profile, studies, projects, moreWork, experience, skills, about } from './data.js'
 
 function Nav() {
@@ -33,7 +33,7 @@ function Hero() {
           </p>
           <div className="hero__ctas">
             <a className="btn btn--primary" href="#work">See my projects</a>
-            <a className="btn btn--ghost" href={`mailto:${profile.email}`}>Email me</a>
+            <EmailButton email={profile.email} className="btn--ghost" />
           </div>
           <p className="hero__now"><span className="dot" />Software Engineer at Gainfront. Open to new roles and freelance work.</p>
         </div>
@@ -172,7 +172,7 @@ function Contact() {
         <h2>Let's build something.</h2>
         <p>I'm open to software engineering roles, especially in ML and healthcare tech, and to freelance web projects.</p>
         <div className="hero__ctas">
-          <a className="btn btn--primary" href={`mailto:${profile.email}`}>Email me</a>
+          <EmailButton email={profile.email} className="btn--primary" />
           <a className="btn btn--light" href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a className="btn btn--light" href={profile.github} target="_blank" rel="noopener noreferrer">GitHub</a>
           {profile.resume && <a className="btn btn--light" href={profile.resume}>Resume</a>}
